@@ -20,6 +20,7 @@ class Triangle:
             return True
         else:
             return False
+
     
     def get_type(self) -> str:
         '''
