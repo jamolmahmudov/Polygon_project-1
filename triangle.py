@@ -16,7 +16,13 @@ class Triangle:
         Returns:
             bool: True if the triangle is valid, False otherwise
         '''
-        pass
+    
+        if self.a+self.b>=self.c and self.b+self.c>=self.a and self.c+self.a>=self.b:
+         return True
+        else:
+         return False
+
+        
     
     def get_type(self) -> str:
         '''
