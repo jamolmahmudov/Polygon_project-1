@@ -3,6 +3,7 @@ from math import pi
 
 class Circle:
     def __init__(self, radius:float):
+        
         self.radius = radius
         
     def is_valid(self) -> bool:
@@ -14,6 +15,7 @@ class Circle:
         Returns:
             bool: True if the circle is valid, False otherwise
         """
+        
         if self.radius>0:
             return True
         else :
@@ -28,6 +30,7 @@ class Circle:
         Returns:
             float: return diameter of the circle if the circle is valid, 0 otherwise
         '''
+        
         return self.radius *2
     
     def circumference(self) -> float:
@@ -38,6 +41,7 @@ class Circle:
         Returns:
             float: return circumference of the circle if the circle is valid, 0 otherwise
         '''
+        
         return self.radius*2*pi
     
     
@@ -49,4 +53,5 @@ class Circle:
         Returns:
             float: return area of the circle if the circle is valid, 0 otherwise
         '''
+        
         return self.radius**2*pi
